@@ -1,0 +1,135 @@
+.main{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: 60px auto 20px;
+  grid-template-areas: 
+  "h h h h h h"
+  "c c c lf lf lf"
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.header{
+  grid-area: h;
+  background-color: #24292E;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas:
+  "lh . rh"
+}
+
+.left-header{
+  grid-area: lh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.right-header{
+  grid-area: rh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mid-text{
+  grid-area: c;
+  display: grid;
+  grid-template-columns: 90px auto 50px;
+  grid-template-areas: 
+  ". . ."
+  ". text ."
+}
+
+.login-form{
+  grid-area: lf;
+}
+
+form > #email, #password, #username{
+  display: block;
+  width: 100%;
+  padding: 15px 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(206, 206, 206);
+}
+
+#submit{
+  width: 100%;
+  padding: 6%;
+  background-color: rgb(40, 167, 69);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+label{
+  font-weight: 600;
+  color: rgb(73, 73, 73);
+}
+
+#search{
+  padding: 10px 10px;
+  background-color: #3F4448;
+  border-radius: 5px;
+  border: 1px solid #24292E;
+}
+
+#search:focus{
+  background-color: white;
+}
+
+#signup{
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.login-form, .mid-text{
+  height: 100vh;
+  background-color: #2B3137;
+  padding-top: 5%;
+}
+
+.card{
+  background-color: white;
+  width: 60%;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 15%;
+}
+
+.welcome-text{
+  grid-area: text;
+}
+
+.big-header{
+  font-weight: 900;
+  font-size: 4em;
+  color: white;
+}
+
+.small-text{
+  line-height: 1.5em;
+  font-weight: 550;
+  font-size: 20px;
+  color: #979A9D;
+}
+
+.tiny-text{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 13px;
+  line-height: 1.5em;
+}
+
+.color-text{
+  color: rgb(40, 167, 69);
+}
