@@ -1,0 +1,169 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.main{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto 3em;
+  grid-template-areas: 
+  "lm rm"
+  "f f";
+}
+
+.left-main{
+  grid-area: lm;
+  background-color: #1DA1F2;
+  color: white;
+  display: grid;
+  grid-template-columns: 5em auto 5em;
+  grid-template-rows: 7em 5em 5em auto 5em;
+  grid-template-areas: 
+  ". . ."
+  ". lm-h ."
+  ". . ."
+  ". lm-ul ."
+  ". . .";
+}
+
+.right-main{
+  grid-area: rm;
+  background-color: #15202B;
+  display: grid;
+  grid-template-columns: 8em auto 10em;
+  grid-template-rows: 8em auto 8em;
+  grid-template-areas: 
+  ". . ."
+  ". rm-form ."
+  ". . ."
+}
+
+.footer{
+  grid-area: f;
+  background-color: #15202B;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #6b7d8c;
+  font-size: 12px;
+}
+
+.left-main > .lm-header{
+  grid-area: lm-h;
+}
+
+.lm-header > .lmh-1{
+  font-size: 1.9em;
+  font-weight: 900;
+}
+
+.lm-header > .lmh-desc{
+  margin: 0.5em 0em 0.9em 0em;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.left-main > .lm-ul{
+  grid-area: lm-ul;
+}
+
+li{
+  list-style-type: none;
+}
+
+.items > .heavy{
+  display: block;
+  margin-top: 1em;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.items > .desc{
+  font-size: 0.9em;
+}
+
+.right-main > .form{
+  grid-area: rm-form;
+  display: grid;
+  grid-template-rows: 2.5em 2em 2em 1em auto;
+  grid-template-areas: 
+  "rm-1"
+  "rm-2"
+  "."
+  "rm-3"
+  "rm-4";
+  grid-row-gap: 20px;
+}
+
+.login-btn{
+  grid-area: btn;
+  border-radius: 5em;
+  padding: 10px 13px;
+  background-color: transparent;
+  border: 1px solid #1DA1F2;
+  color: #1DA1F2;
+}
+
+.login-btn:hover{
+  background-color: white;
+  cursor: pointer;
+}
+
+.form > .rm-1{
+  grid-area: rm-1;
+  display: grid;
+  grid-template-columns: 2em auto 5em;
+  grid-template-areas: 
+  "img . btn";
+}
+
+.rm-1 > img{
+  grid-area: img;
+}
+
+.form > .rm-2{
+  grid-area: rm-2;
+  font-size: 1.6em;
+  font-weight: 800;
+  color: white;
+}
+
+.form > .rm-3{
+  grid-area: rm-3;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.form > .rm-4{
+  grid-area: rm-4;
+  display: flex;
+  flex-direction: column;
+}
+
+.rm-4 > .rm4-btn-signup, .rm4-btn-login{
+  border-radius: 15px;
+  padding: 8px 15px;
+  margin-top: 10px;
+  font-weight: 700;
+  border: 1px solid #1DA1F2;
+  cursor: pointer;
+}
+
+.rm-4 > .rm4-btn-signup{
+  background-color: #1DA1F2;
+  color: white;
+  font-weight: 700;
+}
+
+.rm-4 > .rm4-btn-login{
+  background-color: transparent;
+  color: #1DA1F2;
+}
+
+.rm4-btn-login:hover{
+  background-color: white;
+}
+
