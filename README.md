@@ -1,3 +1,3 @@
 # ui-markups
 
-This repository just houses UI markups of popular pages built from cratch with css grid and flex box.
+This repository houses the reproduced version of popular web home pages built from scratch using CSS Grid and Flex Box.
